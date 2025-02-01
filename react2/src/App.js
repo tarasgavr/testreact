@@ -1,11 +1,9 @@
 import Title from "./Title";
 function App() {
 
-  return (<div style={{
-    color: 'red', fontWeight: 'bold'
-   }}>
+  return (<h1>
     <Title />
-  </div>);
+  </h1>);
 }
 
 export default App;
