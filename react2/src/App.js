@@ -1,9 +1,15 @@
-import Title from "./Title";
+import Product from "./Product";
+import "./App.css"
 function App() {
-
-  return (<h1>
-    <Title />
-  </h1>);
+  const product = {
+      name: "iPhone13",
+      price: 999,
+      inStock: true,
+    }
+  return (<div className='App'>
+    <h1>СТОРІНКА ПРОДУКТУ</h1>
+    <Product product={product} />
+  </div>);
 }
 
 export default App;
