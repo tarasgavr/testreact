@@ -3,7 +3,7 @@ import "./App.css"
 function App() {
   const product = {
       name: "iPhone13",
-      price: 999,
+      price: "$999",
       inStock: true,
     }
   return (<div className='App'>
