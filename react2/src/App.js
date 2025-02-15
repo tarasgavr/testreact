@@ -15,7 +15,7 @@ function App() {
     {
       name: "iPhone15",
       price: "$1999",
-      inStock: true,
+      inStock: false,
     },
   ]
   const list = data.map(item => <Product product={item} />
