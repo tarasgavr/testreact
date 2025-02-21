@@ -1,28 +1,10 @@
-import Product from "./Product";
+import Button from "./components/button";
 import "./App.css"
 function App() {
-  const data = [
-    {
-      name: "iPhone13",
-      price: "$999",
-      inStock: true,
-    },
-    {
-      name: "iPhone14",
-      price: "$1499",
-      inStock: true,
-    },
-    {
-      name: "iPhone15",
-      price: "$1999",
-      inStock: true,
-    },
-  ]
-  const list = data.map(item => <Product product={item} />
-  )
+  const click = () => console.log("You clicked me!")
   return (<div className='App'>
-    <h1>СТОРІНКА ПРОДУКТУ</h1>
-    {list}
+    <h1>СТОРІНКА ПРИКЛАДУ</h1>
+    <Button click={click} buttonTxt="I'm button" />
   </div>);
 }
 
