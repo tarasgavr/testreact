@@ -1,11 +1,15 @@
-import {Button, Link } from "./components/index";
+import { Button, Link } from "./components/index";
 import "./App.css"
+const click = (Txt) => {
+  alert(`You clicked ${ Txt }`)
+}
 function App() {
-  const click = () => console.log("You clicked me!")
   return (<div className='App'>
     <h1>СТОРІНКА ПРИКЛАДУ</h1>
-    <Button click={click} buttonTxt="I'm button" />
-    <Link click={click} linkTxt="I'm link" />
+    <div className='table'>
+      <Button click={click("button")} buttonTxt="I'm button" />
+      <Link click={click("link")} linkTxt="I'm link" />
+    </div>
   </div>);
 }
 

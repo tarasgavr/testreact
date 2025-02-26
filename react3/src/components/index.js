@@ -1,6 +1,7 @@
+import "./index.css";
 export function Button({ buttonTxt, click }) {
-  return <button onClick={click}>{buttonTxt}</button >
+  return <button clasName="button" onClick={click}>{buttonTxt}</button >
 }
 export function Link({ linkTxt, click }) {
-  return <a onClick={click}>{linkTxt}</a>;
+  return <a clasName="link" onClick={click}>{linkTxt}</a>;
 }
