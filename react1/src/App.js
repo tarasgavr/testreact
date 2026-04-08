@@ -1,11 +1,13 @@
 import Title from "./Title";
 function App() {
 
-  return (<div style={{
-    color: 'red', fontWeight: 'bold'
+  return (
+  <div style={{ 
+    color: 'red', fontSize: '20px',  fontWeight: 'bold'
    }}>
-    <Title />
-  </div>);
+    <Title     text={`"mm`}/>
+  </div>
+  );
 }
 
 export default App;
