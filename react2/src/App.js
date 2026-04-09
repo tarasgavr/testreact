@@ -20,10 +20,12 @@ function App() {
   ]
   const list = data.map(item => <Product product={item} />
   )
-  return (<div className='App'>
+  return (
+  <div className='App'>
     <h1>СТОРІНКА ПРОДУКТУ</h1>
     {list}
-  </div>);
+  </div>
+  );
 }
 
 export default App;
