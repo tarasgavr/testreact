@@ -1,4 +1,4 @@
-function Title( { text }) {
-  return <h1>{text}</h1>;
+function Title( { text, style = {} }) {
+  return <h1 style={style}>{text}</h1>;
 }
 export default Title;
